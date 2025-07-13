@@ -4,32 +4,7 @@
     <meta charset="UTF-8">
     <title>Credentials Saved</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f6f8;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            background: #fff;
-            padding: 2em 3em;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            text-align: center;
-        }
-        h1 {
-            color: #2e7d32;
-        }
-        p {
-            color: #333;
-            margin-top: 1em;
-        }
-    </style>
+    <link rel="stylesheet" href="/static/styles.css">
     <script>
        setInterval(function() {
             let countdownElement = document.getElementById('countdown');
@@ -43,7 +18,7 @@
     </script>
 </head>
 <body>
-    <div class="container">
+    <div class="container success-message">
         <h1>Credentials Saved</h1>
         <p>Your credentials have been saved successfully.</p>
         <p>The device will restart in <b id="countdown">5</b> seconds.</p>

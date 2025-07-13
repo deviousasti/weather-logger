@@ -13,12 +13,13 @@ void WebInterface::start() {
     });
 
     // Serve static files
-    server.serveStatic("/", LittleFS, "/static/", "max-age=86400, private");
+    server.serveStatic("/static", LittleFS, "/static/", "max-age=86400, private");
 
     // Handle 404
     server.onNotFound([](AsyncWebServerRequest *request) {
         debugPrint("404: " + String(request->url().c_str()));
-        request->send(LittleFS, "/404.html", "text/html", 404);
+        request->send(404, "text/html");
+        request->send(LittleFS, "/404.html", "text/html", false);
     });
 
     server.begin();

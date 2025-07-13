@@ -16,7 +16,9 @@ void ConfigPortal::setupWebRoutes() {
         server.streamFile(file, "text/html", 200);
     });
 
-    server.serveStatic("/", LittleFS, "/static/", "max-age=86400, private");
+    // Serve static files
+    server.serveStatic("/static", LittleFS, "/static/", "max-age=86400, private");
+
 
     server.on("/clear", HTTP_GET, [this]() {
         preferences.clear();
