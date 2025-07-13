@@ -16,6 +16,8 @@ void ConfigPortal::setupWebRoutes() {
         server.streamFile(file, "text/html", 200);
     });
 
+    server.serveStatic("/", LittleFS, "/static/", "max-age=86400, private");
+
     server.on("/clear", HTTP_GET, [this]() {
         preferences.clear();
         server.send(200, "text/html", "Preferences reset! Turn off the device and turn it back on.");
