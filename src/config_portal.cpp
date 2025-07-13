@@ -73,6 +73,7 @@ bool ConfigPortal::tryConnect() {
     preferences.begin(PREFERENCE_NAMESPACE, true);
     String ssid = preferences.getString("ssid", "");
     String password = preferences.getString("password", "");
+    String mdnsName = preferences.getString("mdnsname", "weather");
     preferences.end();
 
     if (ssid.length() == 0) {
@@ -112,4 +113,26 @@ void ConfigPortal::process() {
 
 bool ConfigPortal::isConfigMode() const {
     return isActive;
+}
+
+bool ConfigPortal::setupMDNS() {
+    String mdnsName = getMDNSName();
+    
+    if (MDNS.begin(mdnsName.c_str())) {
+        debugPrint("mDNS responder started");
+        debugPrint("Device will be accessible at http://" + mdnsName + ".local");
+        // Add service to mDNS
+        MDNS.addService("http", "tcp", 80);
+        return true;
+    } else {
+        debugPrint("Error setting up mDNS responder!");
+        return false;
+    }
+}
+
+String ConfigPortal::getMDNSName() {
+    preferences.begin(PREFERENCE_NAMESPACE, true);
+    String mdnsName = preferences.getString("mdnsname", "weather");
+    preferences.end();
+    return mdnsName;
 }

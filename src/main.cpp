@@ -29,6 +29,10 @@ void setup() {
         return;
     }
     
+    if (!configPortal.setupMDNS()) {
+        debugPrint("Failed to setup mDNS, continuing anyway");
+    }
+    
     webInterface.begin();
 }
 

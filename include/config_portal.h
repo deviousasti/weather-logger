@@ -5,6 +5,7 @@
 #include <Preferences.h>
 #include <WebServer.h>
 #include <DNSServer.h>
+#include <ESPmDNS.h>
 #include <LittleFS.h>
 
 class ConfigPortal {
@@ -22,6 +23,8 @@ public:
     ConfigPortal(WebServer& webServer, Preferences& prefs, const char* prefNamespace = "wifi_config", const char* apSsid = "Set me up");
     void start();
     bool tryConnect();
+    bool setupMDNS();
     void process();
     bool isConfigMode() const;
+    String getMDNSName();
 };
