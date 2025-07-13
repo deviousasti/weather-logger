@@ -6,10 +6,9 @@ WebInterface::WebInterface(AsyncWebServer& webServer)
 {
 }
 
-void WebInterface::begin() {
+void WebInterface::start() {
     // Serve the index page at root
     server.on("/", HTTP_GET, [](AsyncWebServerRequest *request) {
-        debugPrint("Serving index.html");
         request->send(LittleFS, "/index.html", "text/html");
     });
 
@@ -19,7 +18,7 @@ void WebInterface::begin() {
     // Handle 404
     server.onNotFound([](AsyncWebServerRequest *request) {
         debugPrint("404: " + String(request->url().c_str()));
-        request->send(404, "text/plain", "Not found");
+        request->send(LittleFS, "/404.html", "text/html", 404);
     });
 
     server.begin();

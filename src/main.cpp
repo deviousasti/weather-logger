@@ -33,7 +33,7 @@ void setup() {
         debugPrint("Failed to setup mDNS, continuing anyway");
     }
     
-    webInterface.begin();
+    webInterface.start();
 }
 
 void loop() {

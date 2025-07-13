@@ -9,5 +9,5 @@ private:
 
 public:
     WebInterface(AsyncWebServer& webServer);
-    void begin();
+    void start();
 };
