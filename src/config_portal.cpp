@@ -38,17 +38,16 @@ void ConfigPortal::setupWebRoutes() {
         
         File file = LittleFS.open("/saved.html");
         server.streamFile(file, "text/html", 200);
-        String script = "<script>"
-            "setTimeout(function() { "
-            "let link = 'http://" + mdnsName + ".local'; "
-            "window.location.href = link; "
-            "document.getElementById('mdns-link').href = link; "
-            "document.getElementById('mdns-link').innerText = link; "
-            "}, 5000);"
+        String script = 
+            "<script>"
+            "let link = 'http://" + mdnsName + ".local';"
+            "window.location.href = link;"
+            "document.getElementById('mdns-link').href = link;"
+            "document.getElementById('mdns-link').innerText = link;"
             "</script>";
         server.client().write(script.c_str(), script.length());
         debugPrint("Credentials saved to preferences");
-        delay(3000);
+        delay(6000);
         ESP.restart();
     });
 

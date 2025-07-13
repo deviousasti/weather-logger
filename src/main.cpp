@@ -2,15 +2,18 @@
 #include <WiFi.h>
 #include <Preferences.h>
 #include <WebServer.h>
+#include <ESPAsyncWebServer.h>
 #include <LittleFS.h>
 #include "config_portal.h"
+#include "web_server.h"
 #include "ntp.h"
 #include "debug.h"
 
-// Global objects
 Preferences preferences;
 WebServer server(80);
-ConfigPortal* configPortal = nullptr;
+AsyncWebServer asyncServer(80);  // Can use same port as config portal since they won't run simultaneously
+ConfigPortal configPortal(server, preferences);
+WebInterface webInterface(asyncServer);
 
 void setup() {
     Serial.begin(9600);
@@ -21,15 +24,16 @@ void setup() {
         return;
     }
 
-    configPortal = new ConfigPortal(server, preferences);
-    
-    if (!configPortal->tryConnect()) {
-        configPortal->start();
+    if (!configPortal.tryConnect()) {
+        configPortal.start();
+        return;
     }
+    
+    webInterface.begin();
 }
 
 void loop() {
-    if (configPortal) {
-        configPortal->process();
+    if (configPortal.isConfigMode()) {
+        configPortal.process();
     }
 }

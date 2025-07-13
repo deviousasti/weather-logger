@@ -31,17 +31,22 @@
         }
     </style>
     <script>
-        setTimeout(function() {
-            // Optionally, you could redirect or close the page here
-            // window.close();
-        }, 5000);
+       setInterval(function() {
+            let countdownElement = document.getElementById('countdown');
+            let currentCount = parseInt(countdownElement.innerText);
+            if (currentCount > 0) {
+                countdownElement.innerText = currentCount - 1;
+            } else {
+                window.open(document.getElementById('mdns-link').href);
+            }
+        }, 1000);
     </script>
 </head>
 <body>
     <div class="container">
         <h1>Credentials Saved</h1>
         <p>Your credentials have been saved successfully.</p>
-        <p>The device will restart in 5 seconds.</p>
+        <p>The device will restart in <b id="countdown">5</b> seconds.</p>
         <br />
         <p style="font-size: larger;">You can try going to <a id="mdns-link" href="http://weather.local">http://weather.local</a> after it restarts.</p>
     </div>
