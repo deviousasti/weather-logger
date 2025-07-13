@@ -1,0 +1,5 @@
+- Read the WiFi SSID and Passphrase in Preferences and connect to the Wifi
+- If it doesn't exist, or if we are unable to connect to the WiFi, we will instead start an open WiFi Access Point and wait for the user to connect to it and provide the WiFi credentials. The WiFi AP will be called "Set me up". A simple web form will be served.
+- The user will input their Wifi credentials into a form which will be submitted and saved into Preferences
+- The device will then restart
+- Log all of this to debugPrint
