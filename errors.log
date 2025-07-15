@@ -1,0 +1,131 @@
+_multi_buffer_transmit(1207): I2C transaction failed
+[860324][E][esp32-hal-i2c-ng.c:265] i2cWrite(): i2c_master_transmit failed: [259] ESP_ERR_INVALID_STATE       
+Error trying to execute measureLowestPrecision(): Error writing to I2C bus
+E (861644) i2c.master: clear bus failed.
+E (861644) i2c.master: s_i2c_transaction_start(617): reset hardware failed
+E (861644) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed
+E (861650) i2c.master: i2c_master_multi_buffer_transmit(1207): I2C transaction failed
+[861414][E][esp32-hal-i2c-ng.c:265] i2cWrite(): i2c_master_transmit failed: [259] ESP_ERR_INVALID_STATE       
+Error trying to execute measureLowestPrecision(): Error writing to I2C bus
+E (862729) i2c.master: clear bus failed.
+E (862729) i2c.master: s_i2c_transaction_start(617): reset hardware failed
+E (862729) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed
+E (862735) i2c.master: i2c_master_multi_buffer_transmit(1207): I2C transaction failed
+[862499][E][esp32-hal-i2c-ng.c:265] i2cWrite(): i2c_master_transmit failed: [259] ESP_ERR_INVALID_STATE       
+Error trying to execute measureLowestPrecision(): Error writing to I2C bus
+E (863819) i2c.master: clear bus failed.
+E (863819) i2c.master: s_i2c_transaction_start(617): reset hardware failed
+E (863819) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed
+E (863825) i2c.master: i2c_master_multi_buffer_transmit(1207): I2C transaction failed
+[863589][E][esp32-hal-i2c-ng.c:265] i2cWrite(): i2c_master_transmit failed: [259] ESP_ERR_INVALID_STATE       
+Error trying to execute measureLowestPrecision(): Error writing to I2C bus
+E (864904) i2c.master: clear bus failed.
+E (864904) i2c.master: s_i2c_transaction_start(617): reset hardware failed
+E (864904) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed
+E (864910) i2c.master: i2c_master_multi_buffer_transmit(1207): I2C transaction failed
+[864674][E][esp32-hal-i2c-ng.c:265] i2cWrite(): i2c_master_transmit failed: [259] ESP_ERR_INVALID_STATE       
+Error trying to execute measureLowestPrecision(): Error writing to I2C bus
+E (865994) i2c.master: clear bus failed.
+E (865994) i2c.master: s_i2c_transaction_start(617): reset hardware failed
+E (865994) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed
+E (866000) i2c.master: i2c_master_multi_buffer_transmit(1207): I2C transaction failed
+[865764][E][esp32-hal-i2c-ng.c:265] i2cWrite(): i2c_master_transmit failed: [259] ESP_ERR_INVALID_STATE       
+Error trying to execute measureLowestPrecision(): Error writing to I2C bus
+E (867079) i2c.master: clear bus failed.
+E (867079) i2c.master: s_i2c_transaction_start(617): reset hardware failed
+E (867079) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed
+E (867085) i2c.master: i2c_master_multi_buffer_transmit(1207): I2C transaction failed
+[866849][E][esp32-hal-i2c-ng.c:265] i2cWrite(): i2c_master_transmit failed: [259] ESP_ERR_INVALID_STATE       
+Error trying to execute measureLowestPrecision(): Error writing to I2C bus
+E (868169) i2c.master: clear bus failed.
+E (868169) i2c.master: s_i2c_transaction_start(617): reset hardware failed
+E (868169) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed
+E (868175) i2c.master: i2c_master_multi_buffer_transmit(1207): I2C transaction failed
+[867939][E][esp32-hal-i2c-ng.c:265] i2cWrite(): i2c_master_transmit failed: [259] ESP_ERR_INVALID_STATE
+Error trying to execute measureLowestPrecision(): Error writing to I2C bus
+E (869253) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed
+E (869253) i2c.master: i2c_master_multi_buffer_transmit(1207): I2C transaction failed
+[869013][E][esp32-hal-i2c-ng.c:265] i2cWrite(): i2c_master_transmit failed: [259] ESP_ERR_INVALID_STATE
+Error trying to execute measureLowestPrecision(): Error writing to I2C bus
+E (870332) i2c.master: clear bus failed.
+E (870332) i2c.master: s_i2c_transaction_start(617): reset hardware failed
+E (870332) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed
+E (870338) i2c.master: i2c_master_multi_buffer_transmit(1207): I2C transaction failed
+[870102][E][esp32-hal-i2c-ng.c:265] i2cWrite(): i2c_master_transmit failed: [259] ESP_ERR_INVALID_STATE
+Error trying to execute measureLowestPrecision(): Error writing to I2C bus
+E (871417) i2c.master: clear bus failed.
+E (871417) i2c.master: s_i2c_transaction_start(617): reset hardware failed
+E (871417) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed
+E (871423) i2c.master: i2c_master_multi_buffer_transmit(1207): I2C transaction failed
+[871187][E][esp32-hal-i2c-ng.c:265] i2cWrite(): i2c_master_transmit failed: [259] ESP_ERR_INVALID_STATE
+Error trying to execute measureLowestPrecision(): Error writing to I2C bus
+E (872507) i2c.master: clear bus failed.
+E (872507) i2c.master: s_i2c_transaction_start(617): reset hardware failed
+E (872507) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed
+E (872513) i2c.master: i2c_master_multi_buffer_transmit(1207): I2C transaction failed
+[872277][E][esp32-hal-i2c-ng.c:265] i2cWrite(): i2c_master_transmit failed: [259] ESP_ERR_INVALID_STATE
+Error trying to execute measureLowestPrecision(): Error writing to I2C bus
+E (873592) i2c.master: clear bus failed.
+E (873592) i2c.master: s_i2c_transaction_start(617): reset hardware failed
+E (873592) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed
+E (873598) i2c.master: i2c_master_multi_buffer_transmit(1207): I2C transaction failed
+[873362][E][esp32-hal-i2c-ng.c:265] i2cWrite(): i2c_master_transmit failed: [259] ESP_ERR_INVALID_STATE       
+Error trying to execute measureLowestPrecision(): Error writing to I2C bus
+E (874682) i2c.master: clear bus failed.
+E (874682) i2c.master: s_i2c_transaction_start(617): reset hardware failed
+E (874682) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed
+E (874688) i2c.master: i2c_master_multi_buffer_transmit(1207): I2C transaction failed
+[874452][E][esp32-hal-i2c-ng.c:265] i2cWrite(): i2c_master_transmit failed: [259] ESP_ERR_INVALID_STATE       
+Error trying to execute measureLowestPrecision(): Error writing to I2C bus
+E (875767) i2c.master: clear bus failed.
+E (875767) i2c.master: s_i2c_transaction_start(617): reset hardware failed
+E (875767) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed
+E (875773) i2c.master: i2c_master_multi_buffer_transmit(1207): I2C transaction failed
+[875537][E][esp32-hal-i2c-ng.c:265] i2cWrite(): i2c_master_transmit failed: [259] ESP_ERR_INVALID_STATE
+Error trying to execute measureLowestPrecision(): Error writing to I2C bus
+E (876857) i2c.master: clear bus failed.
+E (876857) i2c.master: s_i2c_transaction_start(617): reset hardware failed
+E (876857) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed
+E (876863) i2c.master: i2c_master_multi_buffer_transmit(1207): I2C transaction failed
+[876627][E][esp32-hal-i2c-ng.c:265] i2cWrite(): i2c_master_transmit failed: [259] ESP_ERR_INVALID_STATE       
+Error trying to execute measureLowestPrecision(): Error writing to I2C bus
+E (877942) i2c.master: clear bus failed.
+E (877942) i2c.master: s_i2c_transaction_start(617): reset hardware failed
+E (877942) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed
+E (877948) i2c.master: i2c_master_multi_buffer_transmit(1207): I2C transaction failed
+[877712][E][esp32-hal-i2c-ng.c:265] i2cWrite(): i2c_master_transmit failed: [259] ESP_ERR_INVALID_STATE       
+Error trying to execute measureLowestPrecision(): Error writing to I2C bus
+E (879031) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed
+E (879031) i2c.master: i2c_master_multi_buffer_transmit(1207): I2C transaction failed
+[878791][E][esp32-hal-i2c-ng.c:265] i2cWrite(): i2c_master_transmit failed: [259] ESP_ERR_INVALID_STATE       
+Error trying to execute measureLowestPrecision(): Error writing to I2C bus
+E (880105) i2c.master: clear bus failed.
+E (880105) i2c.master: s_i2c_transaction_start(617): reset hardware failed
+E (880105) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed
+E (880111) i2c.master: i2c_master_multi_buffer_transmit(1207): I2C transaction failed
+[879875][E][esp32-hal-i2c-ng.c:265] i2cWrite(): i2c_master_transmit failed: [259] ESP_ERR_INVALID_STATE       
+Error trying to execute measureLowestPrecision(): Error writing to I2C bus
+E (881195) i2c.master: clear bus failed.
+E (881195) i2c.master: s_i2c_transaction_start(617): reset hardware failed
+E (881195) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed
+E (881201) i2c.master: i2c_master_multi_buffer_transmit(1207): I2C transaction failed
+[880965][E][esp32-hal-i2c-ng.c:265] i2cWrite(): i2c_master_transmit failed: [259] ESP_ERR_INVALID_STATE       
+Error trying to execute measureLowestPrecision(): Error writing to I2C bus
+E (882280) i2c.master: clear bus failed.
+E (882280) i2c.master: s_i2c_transaction_start(617): reset hardware failed
+E (882280) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed
+E (882286) i2c.master: i2c_master_multi_buffer_transmit(1207): I2C transaction failed
+[882050][E][esp32-hal-i2c-ng.c:265] i2cWrite(): i2c_master_transmit failed: [259] ESP_ERR_INVALID_STATE       
+Error trying to execute measureLowestPrecision(): Error writing to I2C bus
+E (883370) i2c.master: clear bus failed.
+E (883370) i2c.master: s_i2c_transaction_start(617): reset hardware failed
+E (883370) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed
+E (883376) i2c.master: i2c_master_multi_buffer_transmit(1207): I2C transaction failed
+[883140][E][esp32-hal-i2c-ng.c:265] i2cWrite(): i2c_master_transmit failed: [259] ESP_ERR_INVALID_STATE
+Error trying to execute measureLowestPrecision(): Error writing to I2C bus
+E (884455) i2c.master: clear bus failed.
+E (884455) i2c.master: s_i2c_transaction_start(617): reset hardware failed
+E (884455) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed
+E (884461) i2c.master: i2c_master_multi_buffer_transmit(1207): I2C transaction failed
+ter_transmit failed: [259] ESP_ERR_INVALID_STATE
+Error trying to execute measureLowestPrecision(): Error writing to I2C bus
